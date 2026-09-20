@@ -1,17 +1,16 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../components/HomeView.vue'
-
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: '/login',
       component: HomeView,
+      meta: { title: '苍穹外卖' },
     },
     {
       path: '/404',
-      name: '404',
+
       component: import('../components/404View.vue'),
     },
     {
